@@ -46,7 +46,7 @@ stages:
             - linux-image-surface
             - linux-headers-surface
             - libwacom-surface
-            - ipts
+            - iptsd
 
   # Put your custom actions before this comment
 
