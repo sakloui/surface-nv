@@ -1,6 +1,7 @@
 # Custom Vib Image for the Microsoft surface lineup with NVIDIA GPUs
 
-This is a Vib Image to get the required linux-surface patches working on Vanilla OS, it's based off of the nvidia Vib Image from Vanilla OS.
+This is a Vib Image to get the required linux-surface patches working on Vanilla OS, it's based off of the nvidia-exp Vib Image from Vanilla OS.
+The default nvidia Vib Image does not want to build with the latest linux-surface kernel.
 
 ## How can I get this?
 
