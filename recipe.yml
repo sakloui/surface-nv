@@ -37,7 +37,7 @@ stages:
     type: shell
     commands:
     - >-
-      apt-mark hold linux-image-surface linux-headers-surface libwacom-surface ipts
+      apt-mark hold linux-image-surface linux-headers-surface libwacom-surface iptsd
     modules:
       - name: install-surface-kernel
         type: apt
