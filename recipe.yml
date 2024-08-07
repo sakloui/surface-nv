@@ -1,5 +1,5 @@
 name: Custom Vanilla Surface Image # Replace this name with your image name
-id: vanilla-surface-image # Replace this ID with your image ID
+id: survace-nv # Replace this ID with your image ID
 stages:
 - id: build
   base: ghcr.io/vanilla-os/nvidia:main # Optionally, Replace this image URL with a different one i.e. nvidia:main, etc
