@@ -31,7 +31,7 @@ stages:
     - >-
       echo "deb [arch=amd64] https://pkg.surfacelinux.com/debian release main" \
       | tee /etc/apt/sources.list.d/linux-surface.list
-    - apt update
+    - apt-get update
 
   - name: surface-kernel
     type: shell
