@@ -10,4 +10,4 @@ Then run `abroot upgrade` and wait for it to finish and reboot. you can check if
 
 ## I don't want to get the nvidia drivers because I don't have a dGPU
 
-I currently haven't made a Vib Image for this, but you can create a template from [https://github.com/Vanilla-OS/custom-image](here) follow their steps, and copy most of the config from this repo.
+I currently haven't made a Vib Image for this, but you can create a template from [here](https://github.com/Vanilla-OS/custom-image) follow their steps, and copy most of the config from this repo.
