@@ -1,11 +1,11 @@
-name: Custom Vanilla Surface Image # Replace this name with your image name
-id: survace-nv # Replace this ID with your image ID
+name: Custom Vanilla Surface Image
+id: survace-nv
 stages:
 - id: build
-  base: ghcr.io/vanilla-os/nvidia-exp:main # Optionally, Replace this image URL with a different one i.e. nvidia:main, etc
+  base: ghcr.io/vanilla-os/nvidia-exp:main # nvidia:main does not build with the latest linux-surface kernel
   singlelayer: false
   labels:
-    maintainer: self-maintained # Optionally, Replace this with your name
+    maintainer: self-maintained
   args:
     DEBIAN_FRONTEND: noninteractive # Set the image environment as non-interactive
   
@@ -22,7 +22,7 @@ stages:
     - apt-get update
 
   # Put your custom actions behind this comment
-  - name: surface-kernel # Sample module demonstrating the Shell module with custom commands
+  - name: surface-kernel
     type: shell
     commands:
     - >- 
@@ -37,7 +37,7 @@ stages:
     type: shell
     commands:
     - >-
-      apt-mark hold linux-image-surface linux-headers-surface libwacom-surface iptsd
+      apt-mark hold linux-image-surface linux-headers-surface libwacom-surface iptsd surface-control
     modules:
       - name: install-surface-kernel
         type: apt
@@ -47,6 +47,7 @@ stages:
             - linux-headers-surface
             - libwacom-surface
             - iptsd
+            - surface-control
 
   # Put your custom actions before this comment
 
