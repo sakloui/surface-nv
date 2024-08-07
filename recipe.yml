@@ -30,7 +30,7 @@ stages:
       | gpg --dearmor | dd of=/etc/apt/trusted.gpg.d/linux-surface.gpg
     - >-
       echo "deb [arch=amd64] https://pkg.surfacelinux.com/debian release main" \
-	    | tee /etc/apt/sources.list.d/linux-surface.list
+      | tee /etc/apt/sources.list.d/linux-surface.list
     - apt update
 
   - name: surface-kernel
