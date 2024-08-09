@@ -54,6 +54,13 @@ stages:
     source:
       packages:
         - nvidia-powerd
+  - name: nvidia-config
+    type: shell
+    commands:
+    - >-
+      cp /usr/share/doc/nvidia-powerd/examples/nvidia-powerd.service
+      /etc/systemd/system/nvidia-powerd.service
+    - systemctl enable nvidia-powerd.service
 
   # Put your custom actions before this comment
 
