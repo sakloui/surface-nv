@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  CUSTOM_IMAGE_NAME: survace-nv
+  CUSTOM_IMAGE_NAME: surface-nv
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
 
 jobs:
