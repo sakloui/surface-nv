@@ -1,5 +1,5 @@
 name: Custom Vanilla Surface Image
-id: survace-nv
+id: surface-nv
 stages:
 - id: build
   base: ghcr.io/vanilla-os/nvidia-exp:main # nvidia:main does not build with the latest linux-surface kernel
