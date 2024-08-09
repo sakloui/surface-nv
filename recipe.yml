@@ -48,6 +48,12 @@ stages:
             - libwacom-surface
             - iptsd
             - surface-control
+            
+  - name: nvidia-extras
+    type: apt
+    source:
+      packages:
+        - nvidia-powerd
 
   # Put your custom actions before this comment
 
