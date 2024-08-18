@@ -2,7 +2,7 @@ name: Custom Vanilla Surface Image
 id: surface-nv
 stages:
 - id: build
-  base: ghcr.io/vanilla-os/nvidia-exp:main # nvidia:main does not build with the latest linux-surface kernel
+  base: ghcr.io/vanilla-os/nvidia:main # nvidia:main does not build with the latest linux-surface kernel
   singlelayer: false
   labels:
     maintainer: self-maintained
