@@ -43,7 +43,7 @@ stages:
         type: apt
         source:
           packages:
-            - linux-image-surface
+            - linux-image-surface=6.9.9-surface-1
             - linux-headers-surface
             - libwacom-surface
             - iptsd
